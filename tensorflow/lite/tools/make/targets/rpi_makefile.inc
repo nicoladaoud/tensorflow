@@ -2,7 +2,7 @@
 ifeq ($(TARGET),rpi)
   # Default to the architecture used on the Pi Two/Three (ArmV7), but override this
   # with TARGET_ARCH=armv6 to build for the Pi Zero or One.
-  TARGET_ARCH := armv7l
+  TARGET_ARCH := armv6
   TARGET_TOOLCHAIN_PREFIX := arm-linux-gnueabihf-
 
   ifeq ($(TARGET_ARCH), armv7l)
